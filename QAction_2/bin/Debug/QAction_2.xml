@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QAction_2</name>
+    </assembly>
+    <members>
+        <member name="T:QAction">
+            <summary>
+            DataMiner QAction Class: After Startup.
+            </summary>
+        </member>
+        <member name="M:QAction.Run(Skyline.DataMiner.Scripting.SLProtocol)">
+            <summary>
+            The QAction entry point.
+            </summary>
+            <param name="protocol">Link with SLProtocol process.</param>
+        </member>
+    </members>
+</doc>

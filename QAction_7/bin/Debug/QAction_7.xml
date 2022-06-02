@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QAction_7</name>
+    </assembly>
+    <members>
+        <member name="T:QAction">
+            <summary>
+            DataMiner QAction Class: Parse Clients Response.
+            </summary>
+        </member>
+        <member name="M:QAction.Run(Skyline.DataMiner.Scripting.SLProtocolExt)">
+            <summary>
+            The QAction entry point.
+            </summary>
+            <param name="protocol">Link with SLProtocol process.</param>
+        </member>
+    </members>
+</doc>

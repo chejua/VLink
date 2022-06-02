@@ -1,0 +1,851 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QAction_Helper</name>
+    </assembly>
+    <members>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.tokenapi_1">
+            <summary>PID: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.tokenapi">
+            <summary>PID: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.authflag_5">
+            <summary>PID: 5 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.authflag">
+            <summary>PID: 5 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.username_10">
+            <summary>PID: 10 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.username">
+            <summary>PID: 10 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.password_11">
+            <summary>PID: 11 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.password">
+            <summary>PID: 11 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.gettokenstatuscode_300">
+            <summary>PID: 300 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.gettokenstatuscode">
+            <summary>PID: 300 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.gettokenresponse_301">
+            <summary>PID: 301 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.gettokenresponse">
+            <summary>PID: 301 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.gettokenreuqestbody_302">
+            <summary>PID: 302 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.gettokenreuqestbody">
+            <summary>PID: 302 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getstatussystemcode_303">
+            <summary>PID: 303 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getstatussystemcode">
+            <summary>PID: 303 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getsystemresponse_304">
+            <summary>PID: 304 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getsystemresponse">
+            <summary>PID: 304 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientstatscode_305">
+            <summary>PID: 305 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientstatscode">
+            <summary>PID: 305 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientstatsresponse_306">
+            <summary>PID: 306 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientstatsresponse">
+            <summary>PID: 306 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getpartylinescode_307">
+            <summary>PID: 307 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getpartylinescode">
+            <summary>PID: 307 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getpartylinesresponse_308">
+            <summary>PID: 308 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getpartylinesresponse">
+            <summary>PID: 308 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientscode_309">
+            <summary>PID: 309 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientscode">
+            <summary>PID: 309 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientsresponse_310">
+            <summary>PID: 310 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientsresponse">
+            <summary>PID: 310 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.username_60">
+            <summary>PID: 60 | Type: write</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.username">
+            <summary>PID: 60 | Type: write</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.password_61">
+            <summary>PID: 61 | Type: write</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.password">
+            <summary>PID: 61 | Type: write</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.tablePid">
+            <summary>PID: 1000</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.indexColumn">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.indexColumnPid">
+            <summary>PID: 1001</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Pid.statussystemname_1001">
+            <summary>PID: 1001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Pid.statussystemname">
+            <summary>PID: 1001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Pid.statussystemtext_1002">
+            <summary>PID: 1002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Pid.statussystemtext">
+            <summary>PID: 1002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Pid.statusSystemStatus_1003">
+            <summary>PID: 1003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Pid.statusSystemStatus">
+            <summary>PID: 1003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Idx.statussystemname_1001">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Idx.statussystemname">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Idx.statussystemtext_1002">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Idx.statussystemtext">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Idx.statusSystemStatus_1003">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.Idx.statusSystemStatus">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.tablePid">
+            <summary>PID: 2000</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.indexColumn">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.indexColumnPid">
+            <summary>PID: 2001</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsid_2001">
+            <summary>PID: 2001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsid">
+            <summary>PID: 2001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsconnectionstatus_2002">
+            <summary>PID: 2002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsconnectionstatus">
+            <summary>PID: 2002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsclientid_2003">
+            <summary>PID: 2003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsclientid">
+            <summary>PID: 2003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsclientnumber_2004">
+            <summary>PID: 2004 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsclientnumber">
+            <summary>PID: 2004 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsipaddress_2005">
+            <summary>PID: 2005 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsipaddress">
+            <summary>PID: 2005 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsconnectionstateduration_2006">
+            <summary>PID: 2006 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsconnectionstateduration">
+            <summary>PID: 2006 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsdisconnectcount_2007">
+            <summary>PID: 2007 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsdisconnectcount">
+            <summary>PID: 2007 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsdisconnectstateduration_2008">
+            <summary>PID: 2008 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Pid.clientstatisticsdisconnectstateduration">
+            <summary>PID: 2008 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsid_2001">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsid">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsconnectionstatus_2002">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsconnectionstatus">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsclientid_2003">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsclientid">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsclientnumber_2004">
+            <summary>IDX: 3 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsclientnumber">
+            <summary>IDX: 3 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsipaddress_2005">
+            <summary>IDX: 4 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsipaddress">
+            <summary>IDX: 4 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsconnectionstateduration_2006">
+            <summary>IDX: 5 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsconnectionstateduration">
+            <summary>IDX: 5 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsdisconnectcount_2007">
+            <summary>IDX: 6 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsdisconnectcount">
+            <summary>IDX: 6 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsdisconnectstateduration_2008">
+            <summary>IDX: 7 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clientstatistics.Idx.clientstatisticsdisconnectstateduration">
+            <summary>IDX: 7 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.tablePid">
+            <summary>PID: 3000</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.indexColumn">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.indexColumnPid">
+            <summary>PID: 3001</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylinesid_3001">
+            <summary>PID: 3001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylinesid">
+            <summary>PID: 3001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylineslabelcategory_3002">
+            <summary>PID: 3002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylineslabelcategory">
+            <summary>PID: 3002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylineslabelindex_3003">
+            <summary>PID: 3003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylineslabelindex">
+            <summary>PID: 3003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylinesselectorname_3004">
+            <summary>PID: 3004 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylinesselectorname">
+            <summary>PID: 3004 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylinesimage_3005">
+            <summary>PID: 3005 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Pid.partylinesimage">
+            <summary>PID: 3005 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylinesid_3001">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylinesid">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylineslabelcategory_3002">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylineslabelcategory">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylineslabelindex_3003">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylineslabelindex">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylinesselectorname_3004">
+            <summary>IDX: 3 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylinesselectorname">
+            <summary>IDX: 3 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylinesimage_3005">
+            <summary>IDX: 4 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Partylines.Idx.partylinesimage">
+            <summary>IDX: 4 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.tablePid">
+            <summary>PID: 4000</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.indexColumn">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.indexColumnPid">
+            <summary>PID: 4001</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientid_4001">
+            <summary>PID: 4001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientid">
+            <summary>PID: 4001 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientcategory_4002">
+            <summary>PID: 4002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientcategory">
+            <summary>PID: 4002 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientlabelindex_4003">
+            <summary>PID: 4003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientlabelindex">
+            <summary>PID: 4003 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientlabeltype_4004">
+            <summary>PID: 4004 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientlabeltype">
+            <summary>PID: 4004 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientselectorname_4005">
+            <summary>PID: 4005 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientselectorname">
+            <summary>PID: 4005 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientimage_4006">
+            <summary>PID: 4006 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientimage">
+            <summary>PID: 4006 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientlastconnectiontime_4007">
+            <summary>PID: 4007 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientlastconnectiontime">
+            <summary>PID: 4007 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientid_4001">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientid">
+            <summary>IDX: 0 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientcategory_4002">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientcategory">
+            <summary>IDX: 1 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientlabelindex_4003">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientlabelindex">
+            <summary>IDX: 2 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientlabeltype_4004">
+            <summary>IDX: 3 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientlabeltype">
+            <summary>IDX: 3 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientselectorname_4005">
+            <summary>IDX: 4 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientselectorname">
+            <summary>IDX: 4 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientimage_4006">
+            <summary>IDX: 5 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientimage">
+            <summary>IDX: 5 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientlastconnectiontime_4007">
+            <summary>IDX: 6 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientlastconnectiontime">
+            <summary>IDX: 6 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.WriteParameters.Username">
+            <summary>PID: 60  | Type: write</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.WriteParameters.Password">
+            <summary>PID: 61  | Type: write</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.SLProtocolExt.statussystem">
+            <summary>PID: 1000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.SLProtocolExt.clientstatistics">
+            <summary>PID: 2000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.SLProtocolExt.partylines">
+            <summary>PID: 3000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.SLProtocolExt.clients">
+            <summary>PID: 4000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.statussystem">
+            <summary>PID: 1000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.clientstatistics">
+            <summary>PID: 2000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.partylines">
+            <summary>PID: 3000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.clients">
+            <summary>PID: 4000</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Tokenapi_1">
+            <summary>PID: 1  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Tokenapi">
+            <summary>PID: 1  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Afterstartup_dummy">
+            <summary>PID: 2  | Type: dummy</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Authflag_5">
+            <summary>PID: 5  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Authflag">
+            <summary>PID: 5  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Username_10">
+            <summary>PID: 10  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Username">
+            <summary>PID: 10  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Password_11">
+            <summary>PID: 11  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Password">
+            <summary>PID: 11  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Username_60">
+            <summary>PID: 60  | Type: write</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Password_61">
+            <summary>PID: 61  | Type: write</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Gettokenstatuscode_300">
+            <summary>PID: 300  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Gettokenstatuscode">
+            <summary>PID: 300  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Gettokenresponse_301">
+            <summary>PID: 301  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Gettokenresponse">
+            <summary>PID: 301  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Gettokenreuqestbody_302">
+            <summary>PID: 302  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Gettokenreuqestbody">
+            <summary>PID: 302  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getstatussystemcode_303">
+            <summary>PID: 303  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getstatussystemcode">
+            <summary>PID: 303  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getsystemresponse_304">
+            <summary>PID: 304  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getsystemresponse">
+            <summary>PID: 304  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientstatscode_305">
+            <summary>PID: 305  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientstatscode">
+            <summary>PID: 305  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientstatsresponse_306">
+            <summary>PID: 306  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientstatsresponse">
+            <summary>PID: 306  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getpartylinescode_307">
+            <summary>PID: 307  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getpartylinescode">
+            <summary>PID: 307  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getpartylinesresponse_308">
+            <summary>PID: 308  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getpartylinesresponse">
+            <summary>PID: 308  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientscode_309">
+            <summary>PID: 309  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientscode">
+            <summary>PID: 309  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientsresponse_310">
+            <summary>PID: 310  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientsresponse">
+            <summary>PID: 310  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Statussystemname_1001">
+            <summary>PID: 1001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Statussystemname">
+            <summary>PID: 1001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Statussystemtext_1002">
+            <summary>PID: 1002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Statussystemtext">
+            <summary>PID: 1002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.StatusSystemStatus_1003">
+            <summary>PID: 1003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.StatusSystemStatus">
+            <summary>PID: 1003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsid_2001">
+            <summary>PID: 2001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsid">
+            <summary>PID: 2001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsconnectionstatus_2002">
+            <summary>PID: 2002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsconnectionstatus">
+            <summary>PID: 2002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsclientid_2003">
+            <summary>PID: 2003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsclientid">
+            <summary>PID: 2003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsclientnumber_2004">
+            <summary>PID: 2004  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsclientnumber">
+            <summary>PID: 2004  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsipaddress_2005">
+            <summary>PID: 2005  | Type: read | EXCEPTIONS: N/A = -1</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsipaddress">
+            <summary>PID: 2005  | Type: read | EXCEPTIONS: N/A = -1</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsconnectionstateduration_2006">
+            <summary>PID: 2006  | Type: read | EXCEPTIONS: N/A = -1</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsconnectionstateduration">
+            <summary>PID: 2006  | Type: read | EXCEPTIONS: N/A = -1</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsdisconnectcount_2007">
+            <summary>PID: 2007  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsdisconnectcount">
+            <summary>PID: 2007  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsdisconnectstateduration_2008">
+            <summary>PID: 2008  | Type: read | EXCEPTIONS: N/A = -1</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientstatisticsdisconnectstateduration">
+            <summary>PID: 2008  | Type: read | EXCEPTIONS: N/A = -1</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylinesid_3001">
+            <summary>PID: 3001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylinesid">
+            <summary>PID: 3001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylineslabelcategory_3002">
+            <summary>PID: 3002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylineslabelcategory">
+            <summary>PID: 3002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylineslabelindex_3003">
+            <summary>PID: 3003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylineslabelindex">
+            <summary>PID: 3003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylinesselectorname_3004">
+            <summary>PID: 3004  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylinesselectorname">
+            <summary>PID: 3004  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylinesimage_3005">
+            <summary>PID: 3005  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Partylinesimage">
+            <summary>PID: 3005  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientid_4001">
+            <summary>PID: 4001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientid">
+            <summary>PID: 4001  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientcategory_4002">
+            <summary>PID: 4002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientcategory">
+            <summary>PID: 4002  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientlabelindex_4003">
+            <summary>PID: 4003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientlabelindex">
+            <summary>PID: 4003  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientlabeltype_4004">
+            <summary>PID: 4004  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientlabeltype">
+            <summary>PID: 4004  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientselectorname_4005">
+            <summary>PID: 4005  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientselectorname">
+            <summary>PID: 4005  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientimage_4006">
+            <summary>PID: 4006  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientimage">
+            <summary>PID: 4006  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientlastconnectiontime_4007">
+            <summary>PID: 4007  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientlastconnectiontime">
+            <summary>PID: 4007  | Type: read</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.StatussystemQActionTable">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.ClientstatisticsQActionTable">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.PartylinesQActionTable">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.ClientsQActionTable">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.StatussystemQActionRow">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.StatussystemQActionRow.Statussystemname_1001">
+            <summary>PID: 1001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.StatussystemQActionRow.Statussystemname">
+            <summary>PID: 1001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.StatussystemQActionRow.Statussystemtext_1002">
+            <summary>PID: 1002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.StatussystemQActionRow.Statussystemtext">
+            <summary>PID: 1002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.StatussystemQActionRow.StatusSystemStatus_1003">
+            <summary>PID: 1003 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.StatussystemQActionRow.StatusSystemStatus">
+            <summary>PID: 1003 | Type: read</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsid_2001">
+            <summary>PID: 2001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsid">
+            <summary>PID: 2001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsconnectionstatus_2002">
+            <summary>PID: 2002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsconnectionstatus">
+            <summary>PID: 2002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsclientid_2003">
+            <summary>PID: 2003 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsclientid">
+            <summary>PID: 2003 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsclientnumber_2004">
+            <summary>PID: 2004 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsclientnumber">
+            <summary>PID: 2004 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsipaddress_2005">
+            <summary>PID: 2005 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsipaddress">
+            <summary>PID: 2005 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsconnectionstateduration_2006">
+            <summary>PID: 2006 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsconnectionstateduration">
+            <summary>PID: 2006 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsdisconnectcount_2007">
+            <summary>PID: 2007 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsdisconnectcount">
+            <summary>PID: 2007 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsdisconnectstateduration_2008">
+            <summary>PID: 2008 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientstatisticsQActionRow.Clientstatisticsdisconnectstateduration">
+            <summary>PID: 2008 | Type: read</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.PartylinesQActionRow">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylinesid_3001">
+            <summary>PID: 3001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylinesid">
+            <summary>PID: 3001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylineslabelcategory_3002">
+            <summary>PID: 3002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylineslabelcategory">
+            <summary>PID: 3002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylineslabelindex_3003">
+            <summary>PID: 3003 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylineslabelindex">
+            <summary>PID: 3003 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylinesselectorname_3004">
+            <summary>PID: 3004 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylinesselectorname">
+            <summary>PID: 3004 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylinesimage_3005">
+            <summary>PID: 3005 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.PartylinesQActionRow.Partylinesimage">
+            <summary>PID: 3005 | Type: read</summary>
+        </member>
+        <member name="T:Skyline.DataMiner.Scripting.ClientsQActionRow">
+            <summary>IDX: 0</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientid_4001">
+            <summary>PID: 4001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientid">
+            <summary>PID: 4001 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientcategory_4002">
+            <summary>PID: 4002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientcategory">
+            <summary>PID: 4002 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientlabelindex_4003">
+            <summary>PID: 4003 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientlabelindex">
+            <summary>PID: 4003 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientlabeltype_4004">
+            <summary>PID: 4004 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientlabeltype">
+            <summary>PID: 4004 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientselectorname_4005">
+            <summary>PID: 4005 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientselectorname">
+            <summary>PID: 4005 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientimage_4006">
+            <summary>PID: 4006 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientimage">
+            <summary>PID: 4006 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientlastconnectiontime_4007">
+            <summary>PID: 4007 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientlastconnectiontime">
+            <summary>PID: 4007 | Type: read</summary>
+        </member>
+    </members>
+</doc>
