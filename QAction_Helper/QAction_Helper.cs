@@ -83,6 +83,26 @@ public static class Parameter
 	public const int getclientsresponse_310 = 310;
 	/// <summary>PID: 310 | Type: read</summary>
 	public const int getclientsresponse = 310;
+	/// <summary>PID: 311 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int putselectorurl_311 = 311;
+	/// <summary>PID: 311 | Type: read</summary>
+	public const int putselectorurl = 311;
+	/// <summary>PID: 312 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int putselectorstatuscode_312 = 312;
+	/// <summary>PID: 312 | Type: read</summary>
+	public const int putselectorstatuscode = 312;
+	/// <summary>PID: 313 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int putselectorresponse_313 = 313;
+	/// <summary>PID: 313 | Type: read</summary>
+	public const int putselectorresponse = 313;
+	/// <summary>PID: 314 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int putselectorbody_314 = 314;
+	/// <summary>PID: 314 | Type: read</summary>
+	public const int putselectorbody = 314;
 	public class Write
 	{
 		/// <summary>PID: 60 | Type: write</summary>
@@ -95,6 +115,11 @@ public static class Parameter
 		public const int password_61 = 61;
 		/// <summary>PID: 61 | Type: write</summary>
 		public const int password = 61;
+		/// <summary>PID: 4058 | Type: write</summary>
+		[EditorBrowsable(EditorBrowsableState.Never)]
+		public const int clientsconnectselectors_4058 = 4058;
+		/// <summary>PID: 4058 | Type: write</summary>
+		public const int clientsconnectselectors = 4058;
 	}
 	public class Statussystem
 	{
@@ -355,8 +380,18 @@ public static class Parameter
 			public const int clientlastconnectiontime_4007 = 4007;
 			/// <summary>PID: 4007 | Type: read</summary>
 			public const int clientlastconnectiontime = 4007;
+			/// <summary>PID: 4008 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int clientsconnectselectors_4008 = 4008;
+			/// <summary>PID: 4008 | Type: read</summary>
+			public const int clientsconnectselectors = 4008;
 			public class Write
 			{
+				/// <summary>PID: 4009 | Type: write</summary>
+				[EditorBrowsable(EditorBrowsableState.Never)]
+				public const int clientsremoveselectors_4009 = 4009;
+				/// <summary>PID: 4009 | Type: write</summary>
+				public const int clientsremoveselectors = 4009;
 			}
 		}
 		public class Idx
@@ -396,6 +431,11 @@ public static class Parameter
 			public const int clientlastconnectiontime_4007 = 6;
 			/// <summary>IDX: 6 | Type: read</summary>
 			public const int clientlastconnectiontime = 6;
+			/// <summary>IDX: 7 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int clientsconnectselectors_4008 = 7;
+			/// <summary>IDX: 7 | Type: read</summary>
+			public const int clientsconnectselectors = 7;
 		}
 	}
 }
@@ -405,6 +445,10 @@ public class WriteParameters
 	public System.Object Username {get { return Protocol.GetParameter(60); }set { Protocol.SetParameter(60, value); }}
 	/// <summary>PID: 61  | Type: write</summary>
 	public System.Object Password {get { return Protocol.GetParameter(61); }set { Protocol.SetParameter(61, value); }}
+	/// <summary>PID: 4009  | Type: write | DISCREETS: Remove All = 1</summary>
+	public System.Object Clientsremoveselectors {get { return Protocol.GetParameter(4009); }set { Protocol.SetParameter(4009, value); }}
+	/// <summary>PID: 4058  | Type: write</summary>
+	public System.Object Clientsconnectselectors {get { return Protocol.GetParameter(4058); }set { Protocol.SetParameter(4058, value); }}
 	public SLProtocolExt Protocol;
 	public WriteParameters(SLProtocolExt protocol)
 	{
@@ -454,6 +498,14 @@ public interface SLProtocolExt : SLProtocol
 	object Getclientscode { get; set; }
 	object Getclientsresponse_310 { get; set; }
 	object Getclientsresponse { get; set; }
+	object Putselectorurl_311 { get; set; }
+	object Putselectorurl { get; set; }
+	object Putselectorstatuscode_312 { get; set; }
+	object Putselectorstatuscode { get; set; }
+	object Putselectorresponse_313 { get; set; }
+	object Putselectorresponse { get; set; }
+	object Putselectorbody_314 { get; set; }
+	object Putselectorbody { get; set; }
 	object Statussystemname_1001 { get; set; }
 	object Statussystemname { get; set; }
 	object Statussystemtext_1002 { get; set; }
@@ -500,6 +552,11 @@ public interface SLProtocolExt : SLProtocol
 	object Clientimage { get; set; }
 	object Clientlastconnectiontime_4007 { get; set; }
 	object Clientlastconnectiontime { get; set; }
+	object Clientsconnectselectors_4008 { get; set; }
+	object Clientsconnectselectors { get; set; }
+	object Clientsremoveselectors_4009 { get; set; }
+	object Clientsremoveselectors { get; set; }
+	object Clientsconnectselectors_4058 { get; set; }
 	WriteParameters Write { get; set; }
 }
 public class ConcreteSLProtocolExt : ConcreteSLProtocol, SLProtocolExt
@@ -595,6 +652,26 @@ public class ConcreteSLProtocolExt : ConcreteSLProtocol, SLProtocolExt
 	public System.Object Getclientsresponse_310 {get { return GetParameter(310); }set { SetParameter(310, value); }}
 	/// <summary>PID: 310  | Type: read</summary>
 	public System.Object Getclientsresponse {get { return GetParameter(310); }set { SetParameter(310, value); }}
+	/// <summary>PID: 311  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Putselectorurl_311 {get { return GetParameter(311); }set { SetParameter(311, value); }}
+	/// <summary>PID: 311  | Type: read</summary>
+	public System.Object Putselectorurl {get { return GetParameter(311); }set { SetParameter(311, value); }}
+	/// <summary>PID: 312  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Putselectorstatuscode_312 {get { return GetParameter(312); }set { SetParameter(312, value); }}
+	/// <summary>PID: 312  | Type: read</summary>
+	public System.Object Putselectorstatuscode {get { return GetParameter(312); }set { SetParameter(312, value); }}
+	/// <summary>PID: 313  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Putselectorresponse_313 {get { return GetParameter(313); }set { SetParameter(313, value); }}
+	/// <summary>PID: 313  | Type: read</summary>
+	public System.Object Putselectorresponse {get { return GetParameter(313); }set { SetParameter(313, value); }}
+	/// <summary>PID: 314  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Putselectorbody_314 {get { return GetParameter(314); }set { SetParameter(314, value); }}
+	/// <summary>PID: 314  | Type: read</summary>
+	public System.Object Putselectorbody {get { return GetParameter(314); }set { SetParameter(314, value); }}
 	/// <summary>PID: 1001  | Type: read</summary>
 	[EditorBrowsable(EditorBrowsableState.Never)]
 	public System.Object Statussystemname_1001 {get { return GetParameter(1001); }set { SetParameter(1001, value); }}
@@ -710,6 +787,18 @@ public class ConcreteSLProtocolExt : ConcreteSLProtocol, SLProtocolExt
 	public System.Object Clientlastconnectiontime_4007 {get { return GetParameter(4007); }set { SetParameter(4007, value); }}
 	/// <summary>PID: 4007  | Type: read</summary>
 	public System.Object Clientlastconnectiontime {get { return GetParameter(4007); }set { SetParameter(4007, value); }}
+	/// <summary>PID: 4008  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Clientsconnectselectors_4008 {get { return GetParameter(4008); }set { SetParameter(4008, value); }}
+	/// <summary>PID: 4008  | Type: read</summary>
+	public System.Object Clientsconnectselectors {get { return GetParameter(4008); }set { SetParameter(4008, value); }}
+	/// <summary>PID: 4009  | Type: write | DISCREETS: Remove All = 1</summary>
+	public System.Object Clientsremoveselectors_4009 {get { return GetParameter(4009); }set { SetParameter(4009, value); }}
+	/// <summary>PID: 4009  | Type: write | DISCREETS: Remove All = 1</summary>
+	public System.Object Clientsremoveselectors {get { return Write.Clientsremoveselectors; }set { Write.Clientsremoveselectors = value; }}
+	/// <summary>PID: 4058  | Type: write</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Clientsconnectselectors_4058 {get { return GetParameter(4058); }set { SetParameter(4058, value); }}
 	public WriteParameters Write { get; set; }
 	public ConcreteSLProtocolExt()
 	{
@@ -890,8 +979,17 @@ public class ClientsQActionRow : QActionTableRow
 	public System.Object Clientlastconnectiontime_4007 { get { if (base.Columns.ContainsKey(6)) { return base.Columns[6]; } else { return null; } } set { if (base.Columns.ContainsKey(6)) { base.Columns[6] = value; } else { base.Columns.Add(6, value); } } }
 	/// <summary>PID: 4007 | Type: read</summary>
 	public System.Object Clientlastconnectiontime { get { if (base.Columns.ContainsKey(6)) { return base.Columns[6]; } else { return null; } } set { if (base.Columns.ContainsKey(6)) { base.Columns[6] = value; } else { base.Columns.Add(6, value); } } }
-	public ClientsQActionRow() : base(0, 7) { }
-	public ClientsQActionRow(System.Object[] oRow) : base(0, 7, oRow) { }
+	/// <summary>PID: 4008 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Clientsconnectselectors_4008 { get { if (base.Columns.ContainsKey(7)) { return base.Columns[7]; } else { return null; } } set { if (base.Columns.ContainsKey(7)) { base.Columns[7] = value; } else { base.Columns.Add(7, value); } } }
+	/// <summary>PID: 4008 | Type: read</summary>
+	public System.Object Clientsconnectselectors { get { if (base.Columns.ContainsKey(7)) { return base.Columns[7]; } else { return null; } } set { if (base.Columns.ContainsKey(7)) { base.Columns[7] = value; } else { base.Columns.Add(7, value); } } }
+	/// <summary>PID: 4009 | Type: write</summary>
+	public System.Object Clientsremoveselectors_4009 { get { if (base.Columns.ContainsKey(8)) { return base.Columns[8]; } else { return null; } } set { if (base.Columns.ContainsKey(8)) { base.Columns[8] = value; } else { base.Columns.Add(8, value); } } }
+	/// <summary>PID: 4009 | Type: write</summary>
+	public System.Object Clientsremoveselectors { get { if (base.Columns.ContainsKey(8)) { return base.Columns[8]; } else { return null; } } set { if (base.Columns.ContainsKey(8)) { base.Columns[8] = value; } else { base.Columns.Add(8, value); } } }
+	public ClientsQActionRow() : base(0, 9) { }
+	public ClientsQActionRow(System.Object[] oRow) : base(0, 9, oRow) { }
 	public static implicit operator ClientsQActionRow(System.Object[] source) { return new ClientsQActionRow(source); }
 	public static implicit operator System.Object[](ClientsQActionRow source) { return source.ToObjectArray(); }
 }

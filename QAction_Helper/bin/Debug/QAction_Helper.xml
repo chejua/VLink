@@ -94,6 +94,30 @@
         <member name="F:Skyline.DataMiner.Scripting.Parameter.getclientsresponse">
             <summary>PID: 310 | Type: read</summary>
         </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorurl_311">
+            <summary>PID: 311 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorurl">
+            <summary>PID: 311 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorstatuscode_312">
+            <summary>PID: 312 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorstatuscode">
+            <summary>PID: 312 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorresponse_313">
+            <summary>PID: 313 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorresponse">
+            <summary>PID: 313 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorbody_314">
+            <summary>PID: 314 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.putselectorbody">
+            <summary>PID: 314 | Type: read</summary>
+        </member>
         <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.username_60">
             <summary>PID: 60 | Type: write</summary>
         </member>
@@ -105,6 +129,12 @@
         </member>
         <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.password">
             <summary>PID: 61 | Type: write</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.clientsconnectselectors_4058">
+            <summary>PID: 4058 | Type: write</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Write.clientsconnectselectors">
+            <summary>PID: 4058 | Type: write</summary>
         </member>
         <member name="F:Skyline.DataMiner.Scripting.Parameter.Statussystem.tablePid">
             <summary>PID: 1000</summary>
@@ -376,6 +406,12 @@
         <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientlastconnectiontime">
             <summary>PID: 4007 | Type: read</summary>
         </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientsconnectselectors_4008">
+            <summary>PID: 4008 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Pid.clientsconnectselectors">
+            <summary>PID: 4008 | Type: read</summary>
+        </member>
         <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientid_4001">
             <summary>IDX: 0 | Type: read</summary>
         </member>
@@ -418,11 +454,20 @@
         <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientlastconnectiontime">
             <summary>IDX: 6 | Type: read</summary>
         </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientsconnectselectors_4008">
+            <summary>IDX: 7 | Type: read</summary>
+        </member>
+        <member name="F:Skyline.DataMiner.Scripting.Parameter.Clients.Idx.clientsconnectselectors">
+            <summary>IDX: 7 | Type: read</summary>
+        </member>
         <member name="P:Skyline.DataMiner.Scripting.WriteParameters.Username">
             <summary>PID: 60  | Type: write</summary>
         </member>
         <member name="P:Skyline.DataMiner.Scripting.WriteParameters.Password">
             <summary>PID: 61  | Type: write</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.WriteParameters.Clientsconnectselectors">
+            <summary>PID: 4058  | Type: write</summary>
         </member>
         <member name="P:Skyline.DataMiner.Scripting.SLProtocolExt.statussystem">
             <summary>PID: 1000</summary>
@@ -546,6 +591,30 @@
         </member>
         <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Getclientsresponse">
             <summary>PID: 310  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorurl_311">
+            <summary>PID: 311  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorurl">
+            <summary>PID: 311  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorstatuscode_312">
+            <summary>PID: 312  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorstatuscode">
+            <summary>PID: 312  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorresponse_313">
+            <summary>PID: 313  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorresponse">
+            <summary>PID: 313  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorbody_314">
+            <summary>PID: 314  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Putselectorbody">
+            <summary>PID: 314  | Type: read</summary>
         </member>
         <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Statussystemname_1001">
             <summary>PID: 1001  | Type: read</summary>
@@ -684,6 +753,15 @@
         </member>
         <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientlastconnectiontime">
             <summary>PID: 4007  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientsconnectselectors_4008">
+            <summary>PID: 4008  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientsconnectselectors">
+            <summary>PID: 4008  | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ConcreteSLProtocolExt.Clientsconnectselectors_4058">
+            <summary>PID: 4058  | Type: write</summary>
         </member>
         <member name="T:Skyline.DataMiner.Scripting.StatussystemQActionTable">
             <summary>IDX: 0</summary>
@@ -846,6 +924,12 @@
         </member>
         <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientlastconnectiontime">
             <summary>PID: 4007 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientsconnectselectors_4008">
+            <summary>PID: 4008 | Type: read</summary>
+        </member>
+        <member name="P:Skyline.DataMiner.Scripting.ClientsQActionRow.Clientsconnectselectors">
+            <summary>PID: 4008 | Type: read</summary>
         </member>
     </members>
 </doc>

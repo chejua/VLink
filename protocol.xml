@@ -53,7 +53,7 @@ DATE          VERSION    AUTHOR                         COMMENTS
 <Protocol xmlns="http://www.skyline.be/protocol">
 	<Name>VLINK Virtual</Name>
 	<Description>VLINK Virtual DataMiner driver</Description>
-	<Version>1.0.0.2</Version>
+	<Version>1.0.0.3</Version>
 	<IntegrationID>DMS-DRV-01</IntegrationID>
 	<Provider>Skyline Communications</Provider>
 	<Vendor>Test</Vendor>
@@ -364,7 +364,80 @@ DATE          VERSION    AUTHOR                         COMMENTS
 				<LengthType>next param</LengthType>
 			</Interprete>
 		</Param>
-
+		<Param id="311" trending="false">
+			<Name>PutSelectorUrl</Name>
+			<Description>Put Selector URL</Description>
+			<Type>read</Type>
+			<Information>
+			</Information>
+			<Interprete>
+				<RawType>other</RawType>
+				<Type>string</Type>
+				<LengthType>next param</LengthType>
+			</Interprete>
+			<Display>
+				<RTDisplay>true</RTDisplay>
+				<Positions>
+					<Position>
+						<Page>Debug</Page>
+						<Column>1</Column>
+						<Row>0</Row>
+					</Position>
+				</Positions>
+			</Display>
+			<Measurement>
+				<Type>string</Type>
+			</Measurement>
+		</Param>
+		<Param id="312" trending="false">
+			<Name>PutSelectorStatusCode</Name>
+			<Description>Put Selector Status Code</Description>
+			<Type>read</Type>
+			<Information>
+			</Information>
+			<Interprete>
+				<RawType>other</RawType>
+				<Type>string</Type>
+				<LengthType>next param</LengthType>
+			</Interprete>
+		</Param>
+		<Param id="313" trending="false">
+			<Name>PutSelectorResponse</Name>
+			<Description>Put Selector Response</Description>
+			<Type>read</Type>
+			<Information>
+			</Information>
+			<Interprete>
+				<RawType>other</RawType>
+				<Type>string</Type>
+				<LengthType>next param</LengthType>
+			</Interprete>
+		</Param>
+		<Param id="314" trending="false">
+			<Name>PutSelectorBody</Name>
+			<Description>Put Selector Body</Description>
+			<Type>read</Type>
+			<Information>
+			</Information>
+			<Interprete>
+				<RawType>other</RawType>
+				<Type>string</Type>
+				<LengthType>next param</LengthType>
+			</Interprete>
+			<Display>
+				<RTDisplay>true</RTDisplay>
+				<Positions>
+					<Position>
+						<Page>Debug</Page>
+						<Column>1</Column>
+						<Row>1</Row>
+					</Position>
+				</Positions>
+			</Display>
+			<Measurement>
+				<Type lines="10">string</Type>
+			</Measurement>
+		</Param>
 		<Param id="1000">
 			<Name>StatusSystem</Name>
 			<Description>Status System</Description>
@@ -817,6 +890,8 @@ DATE          VERSION    AUTHOR                         COMMENTS
 				<ColumnOption idx="4" pid="4005" type="retrieved" value="" options=""/>
 				<ColumnOption idx="5" pid="4006" type="retrieved" value="" options=""/>
 				<ColumnOption idx="6" pid="4007" type="retrieved" value="" options=""/>
+				<ColumnOption idx="7" pid="4008" type="retrieved" options="" />
+				<ColumnOption idx="8" pid="4009" type="custom" options="" />
 			</ArrayOptions>
 			<Information>
 				<Subtext>Clients</Subtext>
@@ -832,7 +907,7 @@ DATE          VERSION    AUTHOR                         COMMENTS
 				</Positions>
 			</Display>
 			<Measurement>
-				<Type options="tab=columns:4001|0-4005|4-4004|3-4002|1-4007|6-4003|2-4006|5,width:100-101-120-103-144-100-100,sort:STRING-STRING-STRING-STRING-INT-STRING-STRING,lines:25,filter:true">table</Type>
+				<Type options="tab=columns:4001|0-4005|4-4004|3-4002|1-4007|6-4003|2-4006|5-4008|7-4009|8,width:100-101-120-103-144-100-100-185-103,sort:STRING-STRING-STRING-STRING-INT-STRING-STRING-STRING-STRING,lines:25,filter:true">table</Type>
 			</Measurement>
 		</Param>
 		<Param id="4001" trending="false">
@@ -985,6 +1060,66 @@ DATE          VERSION    AUTHOR                         COMMENTS
 				<Type options="datetime">number</Type>
 			</Measurement>
 		</Param>
+		<Param id="4008" trending="false">
+			<Name>ClientsConnectSelectors</Name>
+			<Description>Connect Selectors (Clients)</Description>
+			<Type>read</Type>
+			<Information>
+				<Subtext>; separated list to connect clients and party lines to a specific client.</Subtext>
+			</Information>
+			<Interprete>
+				<RawType>other</RawType>
+				<Type>string</Type>
+				<LengthType>next param</LengthType>
+			</Interprete>
+			<Display>
+				<RTDisplay>true</RTDisplay>
+			</Display>
+			<Measurement>
+				<Type>string</Type>
+			</Measurement>
+		</Param>
+		<Param id="4058" setter="true">
+			<Name>ClientsConnectSelectors</Name>
+			<Description>Connect Selectors (Clients)</Description>
+			<Type>write</Type>
+			<Interprete>
+				<RawType>other</RawType>
+				<Type>string</Type>
+				<LengthType>next param</LengthType>
+			</Interprete>
+			<Display>
+				<RTDisplay>true</RTDisplay>
+			</Display>
+			<Measurement>
+				<Type>string</Type>
+			</Measurement>
+		</Param>
+		<Param id="4009" trending="false">
+			<Name>ClientsRemoveSelectors</Name>
+			<Description>Remove Selectors (Clients)</Description>
+			<Type>write</Type>
+			<Information>
+				<Subtext>Clears all the selector assigned to this client</Subtext>
+			</Information>
+			<Interprete>
+				<RawType>numeric text</RawType>
+				<Type>double</Type>
+				<LengthType>next param</LengthType>
+			</Interprete>
+			<Display>
+				<RTDisplay>true</RTDisplay>
+			</Display>
+			<Measurement>
+				<Type width="110">button</Type>
+				<Discreets>
+					<Discreet>
+						<Display>Remove All</Display>
+						<Value>1</Value>
+					</Discreet>
+				</Discreets>
+			</Measurement>
+		</Param>
 	</Params>
 	<QActions>
 		<QAction id="1" name="Precompiled Code" encoding="csharp" options="precompile">
@@ -1006,6 +1141,10 @@ DATE          VERSION    AUTHOR                         COMMENTS
 			
 		</QAction>
 		<QAction id="7" name="Parse Clients" encoding="csharp" triggers="310">
+		</QAction>
+		<QAction id="8" name="Connect Client to Selector" encoding="csharp" triggers="4058" row="true">
+		</QAction>
+		<QAction id="9" name="Remove All Selectors From Client" encoding="csharp" triggers="4009" row="true">
 		</QAction>
 	</QActions>
 	<HTTP>
@@ -1070,6 +1209,21 @@ DATE          VERSION    AUTHOR                         COMMENTS
 				</Response>
 			</Connection>
 		</Session>
+		<Session id="6" name="PutSelectors">
+			<Connection id="1" name="VLINK">
+				<Request verb="PUT" pid="311">
+					<Headers>
+						<Header key="Authorization" pid="1" />
+						<Header key="Content-Type">application/json</Header>
+						<Header key="Accept">*/*</Header>
+					</Headers>
+				<Data pid="314"></Data>
+				</Request>
+				<Response statusCode="312">
+					<Content pid="313" />
+				</Response>
+			</Connection>
+		</Session>
 	</HTTP>
 	<Groups>
 		<Group id="1">
@@ -1124,6 +1278,15 @@ DATE          VERSION    AUTHOR                         COMMENTS
 				<Session>5</Session>
 			</Content>
 		</Group>
+		<Group id="7">
+			<Name>PutSelectors</Name>
+			<Description>Put Selectors</Description>
+			<Condition><![CDATA[id:5 == 1]]></Condition>
+			<Type>poll</Type>
+			<Content>
+				<Session>6</Session>
+			</Content>
+		</Group>
 	</Groups>
 	<Triggers>
 		<Trigger id="1">
@@ -1142,6 +1305,13 @@ DATE          VERSION    AUTHOR                         COMMENTS
 				<Id>3</Id>
 			</Content>
 		</Trigger>
+	<Trigger id="3">
+			<Name>SendPutSelector</Name>
+			<Type>action</Type>
+			<Content>
+				<Id>4</Id>
+			</Content>
+		</Trigger>
 	</Triggers>
 	<Actions>
 		<Action id="1">
@@ -1157,6 +1327,11 @@ DATE          VERSION    AUTHOR                         COMMENTS
 		<Action id="3">
 			<Name>SendGroupGetToken</Name>
 			<On id="1">group</On>
+			<Type>execute next</Type>
+		</Action>
+	<Action id="4">
+			<Name>SendGroupPutSelector</Name>
+			<On id="7">group</On>
 			<Type>execute next</Type>
 		</Action>
 	</Actions>

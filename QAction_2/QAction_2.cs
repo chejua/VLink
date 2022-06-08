@@ -12,14 +12,14 @@ using Skyline.Protocol.MyExtension;
 /// </summary>
 public static class QAction
 {
-    /// <summary>
-    /// The QAction entry point.
-    /// </summary>
-    /// <param name="protocol">Link with SLProtocol process.</param>
-    public static void Run(SLProtocol protocol)
-    {
-        try
-        {
+	/// <summary>
+	/// The QAction entry point.
+	/// </summary>
+	/// <param name="protocol">Link with SLProtocol process.</param>
+	public static void Run(SLProtocol protocol)
+	{
+		try
+		{
 			var credentialParams = (object[])protocol.GetParameters(new uint[] { Parameter.username_10, Parameter.password_11 });
 			var username = Convert.ToString(credentialParams[0]);
 			var password = Convert.ToString(credentialParams[1]);
@@ -36,11 +36,11 @@ public static class QAction
 
 
 		}
-        catch (Exception ex)
-        {
-            protocol.Log("QA" + protocol.QActionID + "|" + protocol.GetTriggerParameter() + "|Run|Exception thrown:" + Environment.NewLine + ex, LogType.Error, LogLevel.NoLogging);
-        }
-    }
+		catch (Exception ex)
+		{
+			protocol.Log("QA" + protocol.QActionID + "|" + protocol.GetTriggerParameter() + "|Run|Exception thrown:" + Environment.NewLine + ex, LogType.Error, LogLevel.NoLogging);
+		}
+	}
 
 	private class TokenBody
 	{

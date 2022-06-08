@@ -1,29 +1,30 @@
 namespace Skyline.Protocol
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Text;
+	using System;
+	using System.Collections.Generic;
+	using System.Globalization;
+	using System.Text;
 	using Skyline.DataMiner.Scripting;
 
 	namespace MyExtension
-    {
-        #region Enumerations
+	{
+		#region Enumerations
 
 		public enum Triggers
 		{
 			SendLogingRequest = 2,
+			SendPutSelectors = 3,
 		}
 
-        #endregion
+		#endregion
 
-        #region Structs
-        #endregion
+		#region Structs
+		#endregion
 
-        #region Classes
-       
+		#region Classes
 
-        #endregion
+
+		#endregion
 
 		public class HttpStatusCodeValidator
 		{
@@ -52,7 +53,7 @@ namespace Skyline.Protocol
 				return true;
 			}
 		}
-    }
+	}
 
 	namespace HttpClasess
 	{
@@ -61,9 +62,52 @@ namespace Skyline.Protocol
 			public class Root
 			{
 				public string DISPLAY_NAME { get; set; }
+
 				public string AUTHORIZATION { get; set; }
+
 				public int LABEL_ID { get; set; }
+
 				public int CONNECTION_TIMEOUT_IN_MS { get; set; }
+
+			}
+		}
+
+		namespace PutSelectors
+		{
+			public class Root
+			{
+				public int ID { get; set; }
+
+				public List<SELECTOR> SELECTORS { get; set; }
+			}
+
+			public class SELECTOR
+			{
+				public string TYPE { get; set; }
+
+				public int ID { get; set; }
+
+				//public string ALIAS { get; set; }
+
+				public static string Converter(string word)
+				{
+					var wordToLower = word.ToLower();
+
+					switch (wordToLower)
+					{
+						case "listen":
+							return "SELECTOR_LISTEN";
+
+						case "talk":
+							return "SELECTOR_TALK";
+
+						case "talk/listen":
+							return "SELECTOR";
+
+						default:
+							throw new ArgumentException("Parameter value was not one of the following listen, talk, talk/listen " + word);
+					}
+				}
 			}
 		}
 	}
